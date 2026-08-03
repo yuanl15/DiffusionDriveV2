@@ -1,0 +1,106 @@
+# ==========================================
+# 1. 数据集（大文件，绝对不能提交）
+# ==========================================
+# trainval / navtrain 训练集
+trainval_navsim_logs/
+trainval_sensor_blobs/
+
+# 测试集
+test_navsim_logs/
+test_sensor_blobs/
+
+# mini 子集
+mini_navsim_logs/
+mini_sensor_blobs/
+
+# 比赛私有测试集
+private_test_e2e_navsim_logs/
+private_test_e2e_sensor_blobs/
+
+# nuPlan 地图
+maps/
+
+# 下载脚本解压出来的中间产物
+download/openscene-v1.1/
+download/openscene_v1.1/
+download/tmp_download/
+download/*.tgz
+download/*.zip
+download/current_split_*/
+download/history_split_*/
+download/competition_test/
+download/private_test_e2e/
+
+# 解压在别处的 tgz/zip 压缩包
+*.tgz
+*.tar.gz
+*.zip
+
+# ==========================================
+# 2. 模型权重 / Checkpoints（大文件）
+# ==========================================
+ckpts/
+*.ckpt
+*.pth
+*.pt
+*.bin
+*.safetensors
+
+# ==========================================
+# 3. GTRS 轨迹数据
+# ==========================================
+gtrs_traj/*.pkl
+gtrs_traj/*.npy
+
+# ==========================================
+# 4. 实验输出 / 缓存 / 日志
+# ==========================================
+# NAVSIM 实验根目录（通常会设环境变量）
+exp/
+experiments/
+outputs/
+results/
+lightning_logs/
+wandb/
+*.log
+
+# 数据集缓存（pkl/features）
+**/cache/
+**/.cache/
+metric_cache/
+training_cache/
+train_pdm_cache/
+metric_feature_cache/
+__pycache__/
+*.pyc
+*.pyo
+
+# ==========================================
+# 5. Python / IDE / 系统垃圾
+# ==========================================
+# Python 虚拟环境
+venv/
+.venv/
+env/
+.env
+
+# Jupyter notebook 检查点
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS / Windows 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Conda / pip
+*.egg-info/
+.eggs/
+build/
+dist/
