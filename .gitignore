@@ -30,6 +30,7 @@ download/current_split_*/
 download/history_split_*/
 download/competition_test/
 download/private_test_e2e/
+download/*.jpg
 
 # 解压在别处的 tgz/zip 压缩包
 *.tgz
