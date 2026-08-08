@@ -4,7 +4,7 @@ After successfully installing the NAVSIM environment, you should further proceed
 
 ```bash
 conda activate navsim
-pip install diffusers einops 
+pip install diffusers==0.25.0 einops 
 ```
 
 To enable faster download, [Jinkun](https://github.com/Jzzzi) provide a improved script [super_download.sh](../download/super_download.sh) by using tmux to parallelize the download process. Thanks for his contribution!

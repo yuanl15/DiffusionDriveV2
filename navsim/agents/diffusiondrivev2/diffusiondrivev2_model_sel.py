@@ -1488,7 +1488,7 @@ class TrajectoryHead(nn.Module):
         traj_to_score = torch.cat(traj_to_score, dim=1)
 
         # for official eval
-        # return {"trajectory": traj_to_score[:,-1]}
+        return {"trajectory": traj_to_score[:,-1]}
 
         reward_group, metric_cache, sub_rewards_group, _ = self.get_pdm_score_para(traj_to_score, metric_cache)
         reward_dict = {}

@@ -1,7 +1,7 @@
-NAVSIM_DEVKIT_ROOT=/home/yuan/storage/share/Projects/DiffusionDriveV2
-NAVSIM_EXP_ROOT=$NAVSIM_DEVKIT_ROOT/outputs
-OPENSCENE_DATA_ROOT=/home/yuan/storage2/share/bigdata/navsim
-NUPLAN_MAPS_ROOT=/home/yuan/storage2/share/bigdata/navsim/maps
+export NAVSIM_DEVKIT_ROOT=/home/yuan/storage/share/Projects/DiffusionDriveV2
+export NAVSIM_EXP_ROOT=$NAVSIM_DEVKIT_ROOT/outputs
+export OPENSCENE_DATA_ROOT=/home/yuan/storage2/share/bigdata/navsim
+export NUPLAN_MAPS_ROOT=/home/yuan/storage2/share/bigdata/navsim/maps
 TRAIN_TEST_SPLIT=navtest
 CHECKPOINT=$NAVSIM_DEVKIT_ROOT/ckpts/diffusiondrive_navsim_88p1_PDMS.pth
 

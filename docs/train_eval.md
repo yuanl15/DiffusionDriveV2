@@ -1,5 +1,9 @@
 # DiffusionDrive Training and Evaluation
-
+注意设置环境变量
+```bash
+export OPENSCENE_DATA_ROOT=/home/yuan/storage2/share/bigdata/navsim
+export NUPLAN_MAPS_ROOT=/home/yuan/storage2/share/bigdata/navsim/maps
+```
 ## 1. Cache dataset for faster training and evaluation
 ```bash
 # cache dataset for training
@@ -74,3 +78,12 @@ python $NAVSIM_DEVKIT_ROOT/navsim/planning/script/run_pdm_score.py \
         experiment_name=diffusiondrivev2_agent_eval
 ```
 
+使用DiffusionDrive模型评估DiffusionDrive模型，设置 `CKPT=ckpts/diffusiondrive_navsim_88p1_PDMS.pth`
+```bash
+python $NAVSIM_DEVKIT_ROOT/navsim/planning/script/run_pdm_score.py \
+        train_test_split=navtest \
+        agent=diffusiondrive_agent \
+        worker=ray_distributed \
+        agent.checkpoint_path=$CKPT \
+        experiment_name=diffusiondrive_agent_eval
+```
